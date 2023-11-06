@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="EUC-KR">
-<title>Insert title here</title>
+<title>JSP 예제 : score.jsp</title>
 </head>
 <body>
 	
