@@ -4,24 +4,24 @@
 <html>
 <head>
 <meta charset="EUC-KR">
-<title>JSP ¿¹Á¦ : score.jsp</title>
+<title>JSP ì˜ˆì œ : score.jsp</title>
 </head>
 <body>
 	
-	<h2> JavaBeans¸¦ ÀÌ¿ëÇÑ ÇĞ»ıÀÇ ÀÌ¸§°ú ¼ºÀûÀÇ ÀúÀå°ú Á¶È¸ ¿¹Á¦ </h2>
+	<h2> JavaBeansë¥¼ ì´ìš©í•œ í•™ìƒì˜ ì´ë¦„ê³¼ ì„±ì ì˜ ì €ì¥ê³¼ ì¡°íšŒ ì˜ˆì œ </h2>
 	<jsp:useBean id="score" class="javabean.ScoreBean" scope="page" />
 	
 	<HR>
-	<h3>ÀÌ¸§°ú ¼ºÀûÀ» JavaBeans ScoreBean¿¡ ÀúÀå</h3><p>
-	ÀÌ¸§ : <%= "±è¼º¹Î" %>,
-	¼ºÀû : <%= "85" %><p>
-	<jsp:setProperty name="score" property="name" value="±è¼º¹Î"/>
+	<h3>ì´ë¦„ê³¼ ì„±ì ì„ JavaBeans ScoreBeanì— ì €ì¥</h3><p>
+	ì´ë¦„ : <%= "ê¹€ì„±ë¯¼" %>,
+	ì„±ì  : <%= "85" %><p>
+	<jsp:setProperty name="score" property="name" value="ê¹€ì„±ë¯¼"/>
 	<jsp:setProperty name="score" property="point" value="85"/>
 	
 	<HR>
-	<h3>JavaBeans ScoreBean¿¡ ÀúÀåµÈ Á¤º¸¸¦ Á¶È¸ Ãâ·Â</h3><p>
-	ÀÌ¸§ : <jsp:getProperty name="score" property="name" /><BR>
-	¼ºÀû : <jsp:getProperty name="score" property="point" /><BR>
+	<h3>JavaBeans ScoreBeanì— ì €ì¥ëœ ì •ë³´ë¥¼ ì¡°íšŒ ì¶œë ¥</h3><p>
+	ì´ë¦„ : <jsp:getProperty name="score" property="name" /><BR>
+	ì„±ì  : <jsp:getProperty name="score" property="point" /><BR>
 	
 </body>
 </html>
