@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="euc-kr">
+    <title>기술 정보 이력서</title>
+</head>
+<body>
+    <h1>기술 정보 이력서</h1>
+    <form action="que07.jsp" method="post">
+        <label for="name">이름:</label>
+        <input type="text" id="name" name="name" required><br>
+        
+        <label for="ssn1">주민등록번호:</label>
+        <input type="text" id="ssn1" name="ssn1" required>
+        -
+        <input type="text" id="ssn2" name="ssn2" required><br>
+        
+        <label>학력:</label><br>
+        <input type="radio" id="education_highschool" name="education" value="고졸"> 고졸
+        <input type="radio" id="education_college" name="education" value="대졸"> 대졸
+        <input type="radio" id="education_graduate" name="education" value="대학원졸"> 대학원졸<br>
+        
+        <label for="major">전공:</label>
+        <select id="major" name="major" required>
+            <option value="산업공학과">산업공학과</option>
+            <option value="기계공학과">기계공학과</option>
+            <option value="기타">기타</option>
+        </select><br>
+        
+        사용가능 플랫폼 <select multiple name="pform">
+			<option selected value="Window 계열 PC">Window 계열 PC</option>
+			<option selected value="Window 계열 서버">Window 계열 서버</option>
+			<option selected value="UNIX">UNIX</option>
+			<option selected value="기타">Window 계열 PC</option>
+		</select>
+        
+        <input type="submit" value="확인">
+        <input type="reset" value="취소">
+    </form>
+</body>
+</html>
+
