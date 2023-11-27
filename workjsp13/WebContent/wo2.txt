@@ -1,0 +1,5 @@
+
+<jsp:useBean id="stdtdb" class="univ.StudentDatabase" scope="page" />
+
+ArrayList<StudentEntity> list = stdtdb.getStudentList();
+int counter = list.size();
